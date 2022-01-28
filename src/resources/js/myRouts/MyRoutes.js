@@ -1,5 +1,6 @@
 import React, { Suspense } from 'react';
 import { BrowserRouter as Router, Routes } from 'react-router-dom';
+import Footer from '../customs/footer/Footer';
 import Header from '../customs/header/Header';
 
 const MyRoutes = () => {
@@ -12,6 +13,7 @@ const MyRoutes = () => {
             
           </Routes>
         </Suspense>
+        <Footer />
       </Router>
     </>
   );

@@ -1,0 +1,36 @@
+.nav {
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+  background: rgb(102,89,236);
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 2 !important;
+  overflow-x: hidden;
+}
+
+.logo {
+  width: 5rem;
+}
+
+.btn_container {
+  position: relative;
+  left: 1rem;
+}
+
+.login,
+.signup {
+  background-color: #122d97 !important;
+  color: #ffffff !important;
+  border-radius: 625rem !important;
+  padding: 0.5rem 1rem !important;
+}
+
+.login {
+  margin-right: 1rem;
+}
+
+@media only screen and (max-width: 990px){
+    /*Big smartphones [426px -> 600px]*/
+  .collapse_container {
+    min-width: 40rem;
+  }
+}

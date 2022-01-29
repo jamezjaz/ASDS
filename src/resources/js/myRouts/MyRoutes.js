@@ -1,19 +1,20 @@
 import React, { Suspense } from 'react';
-import { BrowserRouter as Router, Routes } from 'react-router-dom';
-import Footer from '../customs/footer/Footer';
-import Header from '../customs/header/Header';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from '../components/home/Home';
+// import Footer from '../customs/footer/Footer';
+// import Header from '../customs/header/Header';
 
 const MyRoutes = () => {
   return (
     <>
       <Router>
-        <Header />
+        {/* <Header /> */}
         <Suspense fallback={<h5>Please wait...</h5>}>
           <Routes>
-            
+            <Route exact path='/' element={<Home />} />
           </Routes>
         </Suspense>
-        <Footer />
+        {/* <Footer /> */}
       </Router>
     </>
   );

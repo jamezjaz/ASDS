@@ -1,0 +1,30 @@
+.input_group {
+  max-width: 25rem;
+  position: relative;
+  right: -73rem;
+  top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.form_control {
+  padding: 0.7rem;
+}
+
+.carousel {
+  background: rgb(89,91,238); /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, rgb(89,91,238), rgb(120,89,238), rgb(153,87,238), rgb(200,85,238)); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, rgb(89,91,238), rgb(120,89,238), rgb(153,87,238), rgb(200,85,238)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 2rem 0;
+}
+
+.carousel h2 {
+  text-align: left;
+  --text-opacity: 1;
+  color: rgb(255,255,255,var(--text-opacity));
+  font-weight: bold;
+  border-left: 0.5rem rgb(255,255,255,var(--text-opacity)) solid;
+  border-radius: 30%;
+  padding: 1rem;
+  margin-left: 1rem;
+}
+

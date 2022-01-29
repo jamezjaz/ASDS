@@ -26,14 +26,33 @@
   padding: 2rem 0;
 }
 
-.carousel h2 {
+.carousel h2,
+.header {
   text-align: left;
-  --text-opacity: 1;
-  color: rgb(255,255,255,var(--text-opacity));
   font-weight: bold;
-  border-left: 0.5rem rgb(255,255,255,var(--text-opacity)) solid;
   border-radius: 30%;
   padding: 1rem;
   margin-left: 1rem;
+}
+
+.carousel h2 {
+  --text-opacity: 1;
+  color: rgb(255,255,255,var(--text-opacity));
+  border-left: 0.5rem rgb(255,255,255,var(--text-opacity)) solid;
+}
+
+.header {
+  --text-opacity: 1;
+  color: rgb(132,88,238,var(--text-opacity));
+  border-left: 0.5rem rgb(132,88,238,var(--text-opacity)) solid;
+}
+
+.card_container {
+  margin: 3rem 0 2rem 0;
+}
+
+.card_sub_container {
+  display: flex;
+  flex-wrap: wrap;
 }
 

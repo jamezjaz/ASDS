@@ -1,9 +1,9 @@
 import React from 'react';
-import { Card, Button } from 'react-bootstrap';
 import Header from '../../customs/header/Header';
 import Footer from '../../customs/footer/Footer';
 import Slider from '../slider/Slider';
 import homeStyles from '../home/Home.module.css';
+import Card from '../myCard/MyCard';
 
 const Home = () => {
   return (
@@ -19,18 +19,11 @@ const Home = () => {
         <h2>Latest Posts</h2>
         <Slider />
       </div>
-      <div>
-        <Card style={{ width: '18rem' }}>
-          <Card.Img variant="top" src="holder.js/100px180" />
-          <Card.Body>
-            <Card.Title>Card Title</Card.Title>
-            <Card.Text>
-              Some quick example text to build on the card title and make up the bulk of
-              the card's content.
-            </Card.Text>
-            <Button variant="primary">Go somewhere</Button>
-          </Card.Body>
-        </Card>
+      <div className={homeStyles.card_container}>
+        <h2 className={homeStyles.header}>Trending Posts</h2>
+        <div className={homeStyles.card_sub_container}>
+          <Card />
+        </div>
       </div>
       <Footer />
     </>

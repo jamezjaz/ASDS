@@ -19,7 +19,7 @@ const Home = () => {
         <h2>Latest Posts</h2>
         <Slider />
       </div>
-      <div className={homeStyles.card_container}>
+      <div id='news' className={homeStyles.card_container}>
         <h2 className={homeStyles.header}>Trending Posts</h2>
         <div className={homeStyles.card_sub_container}>
           <Card />

@@ -15,21 +15,24 @@ const Header = () => {
           <div className={headerStyles.collapse_container}>
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
-              <NavDropdown title="About" href="#features" id="navbarScrollingDropdown">
+                <Navbar.Brand href="/" className='text-white'>
+                  Home
+                </Navbar.Brand>
+                <NavDropdown title={<span className="text-white my-auto">About</span>} href="#features" id="navbarScrollingDropdown">
                   <NavDropdown.Item href="#vision_mission">Vision & Mission</NavDropdown.Item>
                 </NavDropdown>
 
-                <NavDropdown title="Members" href="#features" id="navbarScrollingDropdown">
+                <NavDropdown title={<span className="text-white my-auto">Members</span>} href="#features" id="navbarScrollingDropdown">
                   <NavDropdown.Item href="#individuals">Individuals</NavDropdown.Item>
                   <NavDropdown.Item href="#members">Members</NavDropdown.Item>
                 </NavDropdown>
 
-                <NavDropdown title="Research" id="navbarScrollingDropdown">
+                <NavDropdown title={<span className="text-white my-auto">Research</span>} id="navbarScrollingDropdown">
                   <NavDropdown.Item href="#research">Research 1</NavDropdown.Item>
                   <NavDropdown.Item href="#other_reserach">Research 2</NavDropdown.Item>
                 </NavDropdown>
 
-                <NavDropdown title="Others" id="navbarScrollingDropdown">
+                <NavDropdown title={<span className="text-white my-auto">Others</span>} id="navbarScrollingDropdown">
                   <NavDropdown.Item href="#funding">Funding Opportunities</NavDropdown.Item>
                   <NavDropdown.Item href="#news">News & Events</NavDropdown.Item>
                   <NavDropdown.Item href="#get_involved">Get Involved</NavDropdown.Item>

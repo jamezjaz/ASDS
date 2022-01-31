@@ -1,19 +1,23 @@
 import React, { Suspense } from 'react';
 import { BrowserRouter as Router, Routes } from 'react-router-dom';
-import Footer from '../customs/footer/Footer';
-import Header from '../customs/header/Header';
+import ErrorBoundary from '../customs/errorBoundary/ErrorBoundary';
+// import Footer from '../customs/footer/Footer';
+// import Header from '../customs/header/Header';
+import Spinner from '../customs/spinner/Spinner';
 
 const MyRoutes = () => {
   return (
     <>
       <Router>
-        <Header />
-        <Suspense fallback={<h5>Please wait...</h5>}>
-          <Routes>
-            
-          </Routes>
-        </Suspense>
-        <Footer />
+        <ErrorBoundary>
+          <Suspense fallback={<Spinner />}>
+            {/* <Header /> */}
+            <Routes>
+              
+            </Routes>
+            {/* <Footer /> */}
+          </Suspense>
+        </ErrorBoundary>
       </Router>
     </>
   );

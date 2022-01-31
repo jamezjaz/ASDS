@@ -11,7 +11,11 @@ const MyCard = () => {
           <Card.Img variant="top" src={data.image} />
           <Card.Body>
             <Card.Title>
-              <h3>{data.title}</h3>
+              <div className={cardStyles.title}>
+                <h3>{data.title}</h3>
+                <small>{data.date}</small>
+              </div>
+              <p>{data.poster}</p>
             </Card.Title>
             <Card.Text>
               {data.description}

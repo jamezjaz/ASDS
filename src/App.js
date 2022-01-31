@@ -1,5 +1,5 @@
 import './App.css';
-import MyRoutes from './resources/js/myRouts/MyRoutes';
+import MyRoutes from './resources/js/myRoutes/MyRoutes';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {

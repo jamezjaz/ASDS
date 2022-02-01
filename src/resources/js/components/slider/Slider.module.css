@@ -1,0 +1,64 @@
+.slider {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .image {
+    width: 22rem;
+    /* height: 25rem; */
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 5rem 0 0 3rem;
+  }
+  
+  .header img {
+    width: 8rem;
+  }
+  
+  .header h1 {
+    --text-opacity: 1;
+    color: rgb(255,255,255,var(--text-opacity));
+    font-weight: 700;
+  }
+  
+  .header p {
+    max-width: 28rem;
+    --text-opacity: 1;
+    color: rgb(255,255,255,var(--text-opacity));
+  }
+  
+  .prev {
+    position: absolute;
+    top: 14.3rem;
+    left: 7.5rem;
+    /* changes the prev icon color */
+    filter: invert(40%);
+  }
+  .next {
+    position: absolute;
+    top: 14.3rem;
+    right: 7.5rem;
+    /* changes the next icon color */
+    filter: invert(40%);
+  }
+  
+  @media only screen and (max-width: 990px){
+    .slider {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+  
+    .header {
+      text-align: center;
+    }
+  
+    .header img {
+      position: relative;
+      left: 10rem;
+    }
+  }

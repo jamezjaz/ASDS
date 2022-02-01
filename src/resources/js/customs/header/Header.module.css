@@ -6,7 +6,7 @@
   position: sticky !important;
   top: 0 !important;
   z-index: 2 !important;
-  overflow-x: hidden;
+  /* overflow: hidden; */
 }
 
 .logo {

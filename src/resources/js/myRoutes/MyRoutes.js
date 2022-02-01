@@ -5,6 +5,7 @@ import ErrorBoundary from '../customs/errorBoundary/ErrorBoundary';
 // import Footer from '../customs/footer/Footer';
 // import Header from '../customs/header/Header';
 import Spinner from '../customs/spinner/Spinner';
+import Home from '../components/home/Home';
 
 const MyRoutes = () => {
   return (
@@ -14,6 +15,7 @@ const MyRoutes = () => {
           <Suspense fallback={<Spinner />}>
             {/* <Header /> */}
             <Routes>
+              <Route path='/' element={<Home />} />
               <Route path='/signin' element={<SignIn />} />
             </Routes>
             {/* <Footer /> */}

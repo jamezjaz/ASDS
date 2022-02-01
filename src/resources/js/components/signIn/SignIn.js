@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Header from '../../customs/header/Header';
 import Footer from '../../customs/footer/Footer';
-import signinStyles from '../signin/Signin.module.css';
+import signinStyles from '../signIn/SignIn.module.css';
 
-const Signin = () => {
+const SignIn = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [errorMsg, setErrorMsg] = useState('');
@@ -85,4 +85,4 @@ const Signin = () => {
   );
 };
 
-export default Signin;
+export default SignIn;

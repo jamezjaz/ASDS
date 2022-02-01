@@ -1,0 +1,57 @@
+.signin_container {
+  margin: 3rem auto;
+  text-align: left;
+  width: 35%;
+}
+
+.signin_container p {
+  margin: 0.5rem 1rem;
+  font-size: 1.2rem;
+}
+
+.header_container {
+  --text-opacity: 1;
+  color: rgb(132,88,238,var(--text-opacity));
+  border-left: 0.5rem rgb(132,88,238,var(--text-opacity)) solid;
+  border-radius: 30%;
+}
+
+.header_container h3 {
+  padding: 1rem 2rem;
+  font-weight: bold;
+}
+
+.signin {
+  background: rgb(89,91,238); /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, rgb(89,91,238), rgb(120,89,238), rgb(153,87,238), rgb(200,85,238)); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, rgb(89,91,238), rgb(120,89,238), rgb(153,87,238), rgb(200,85,238)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  border-radius: 3rem;
+  min-width: 35rem;
+}
+
+label {
+  margin: 0.5rem 0;
+}
+
+input[type=email],
+input[type=password] {
+  border: none;
+  padding: 0.5rem;
+  width: 70%;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.signin_btn {
+  text-align: center;
+}
+
+@media only screen and (max-width: 996px){
+  .signin_container {
+    margin: 3rem;
+  }
+}

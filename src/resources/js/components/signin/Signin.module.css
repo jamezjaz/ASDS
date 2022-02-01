@@ -49,3 +49,9 @@ input[type=password] {
 .signin_btn {
   text-align: center;
 }
+
+@media only screen and (max-width: 996px){
+  .signin_container {
+    margin: 3rem;
+  }
+}

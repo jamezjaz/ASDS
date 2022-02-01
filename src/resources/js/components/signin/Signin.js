@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Header from '../../customs/header/Header';
+import Footer from '../../customs/footer/Footer';
 import signinStyles from '../signin/Signin.module.css';
 
 const Signin = () => {
@@ -79,6 +80,7 @@ const Signin = () => {
           <Link to='/signup'>here</Link>
         </p>
       </div>
+      <Footer />
     </>
   );
 };
